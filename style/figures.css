@@ -6,7 +6,7 @@ body {
 
   h {
     font-size: larger;
-    font-weight: lighter;
+    font-weight: bold;
   }
 
   #btnBack {
@@ -19,10 +19,31 @@ body {
     font-size: medium;
     font-weight: lighter;
 
-    background-color: paleturquoise;
+    background-color: palevioletred;
   }
 
   #btnHolder{
     text-align: center;
     display: flex;
   }
+
+  #aContainer{
+    width: 100%;
+    height: max-content;
+    text-align: center;
+    border: none;
+}
+
+#btnMemberView{
+    border: 1px solid;
+    border-radius: 3px;
+
+    height: 50px;
+    width: 100%;
+
+    font-family: "Courier New", Courier, monospace;
+    font-size: medium;
+    font-weight: lighter;
+
+    background-color:paleturquoise;
+}

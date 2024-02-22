@@ -43,7 +43,11 @@ if ($stmt = $conn->prepare($sql)) {
                 }
                 echo "<button id='btnMemberView'><h>Progress : </h><br>$progress</button><br />";
             }
-            echo "<br /><form method='post' action='../php/showProjects.php'><button type='submit' id='btnBack'>Back</button></form></div>";
+            echo "<br /><div style='display:flex; justify-content: space-between;'><form method='post' action='../php/showProjects.php'><button type='submit' id='btnBack'>Back</button></form>";
+            echo "<form method='post' action='../html/addPMember.html'><button id='btnUpdate' onclick='window.open('../html/addPMember.html','_self');'>Add Member</button></form>";
+            echo "<form method='post' action='../html/deletePMember.html'><button id='btnBack' onclick='window.open('../html/deletePMember.html','_self');'>Delete Member</button></form>";
+            echo "<form method='post' action='../html/updateProgress.php'><input type='hidden' name='pID' value='$pID'><input type='hidden' name='pName' value='$pName'><button id='btnUpdate' onclick='window.open('../html/updateProgress.html','_self');'>Update Progress</button></form>";
+            echo "</div></div>";
         }
     }
 } 

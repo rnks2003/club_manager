@@ -5,18 +5,18 @@
     <link rel="styleSheet" href="../style/login.css" />
   </head>
   <body>
-    <label id="prompt">Figure to be deleted : </label><br /><br />
+    <label id="prompt">Member to be added : </label><br /><br />
     <div id="form">
       <br />
-      <form method="post" action="../php/deleteFigure.php">
-        <label for="usnDelete">USN : </label>
-        <input class="read" type="text" id="usnDelete" name="usn" />
+      <form method="post" action="../php/addPMember.php">
+        <label for="mUSN">USN : </label>
+        <input class="read" type="text" id="mUSN" name="mUSN" />
         <input
           id="reset"
           type="reset"
           value="Cancel"
           onclick="window.open(
-            'figures.html',
+            '../php/showProjects.php',
             '_self'
           );"
         />

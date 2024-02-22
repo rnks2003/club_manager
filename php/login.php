@@ -28,16 +28,11 @@
                           header("location: ../html/home.html");
                           exit;
                       } else {
-                          // Password is incorrect
-                          $login_err = "Invalid username or password.";
                       }
                   }
               } else {
-                  // Username not found
-                  $login_err = "Invalid username or password.";
               }
           } else {
-              echo "Oops! Something went wrong. Please try again later.";
           }
   
           $stmt->close();

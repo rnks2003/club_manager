@@ -22,11 +22,6 @@
       >
         Forgot Password ?</button
         ><br />
-        <span id="errMsg">
-        <?php
-        echo isset($login_err)?$login_err:'';
-        ?>
-        </span>
         <br />
       <input id="reset" type="reset" value="Reset" onclick="reset()" />
       <input

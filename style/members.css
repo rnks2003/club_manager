@@ -35,8 +35,8 @@ body {
   }
 
   #btnHolder{
-    text-align: center;
     display: flex;
+    justify-content: space-between;
   }
   #aContainer{
     width: 100%;

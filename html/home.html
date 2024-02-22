@@ -11,15 +11,8 @@
     <button id="info" type="button" onclick="post(3)">Projects</button>
     <button id="info" type="button" onclick="post(4)">Attendance</button
     ><br /><br />
-    <button
-      id="logOut"
-      type="button"
-      onclick="window.open(
-      'index.php',
-      '_self'
-    );"
-    >
-      Log Out
-    </button>
+    <form method="post" action="index.php">
+      <button id="logOut" type="submit">Log Out</button>
+    </form>
   </body>
 </html>

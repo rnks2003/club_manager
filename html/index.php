@@ -8,6 +8,15 @@
       href="../style/login.css"
     />
   </head>
+  <?php
+  if (!isset($_SESSION)) {
+    session_start();
+  }else{
+    $_SESSION['username'] = "";
+    echo "run";
+    exit;
+  }
+  ?>
     <body>
     <div id="form">
       <form method="post" action="../php/login.php">

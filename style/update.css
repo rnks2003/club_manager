@@ -22,16 +22,3 @@ body {
 
     background-color: paleturquoise;
   }
-
-  #logOut{
-    border: 1px solid;
-    border-radius: 3px;
-
-    height: 50px;
-
-    font-family: "Courier New", Courier, monospace;
-    font-size: medium;
-    font-weight: lighter;
-    
-    background-color: palevioletred;
-  }

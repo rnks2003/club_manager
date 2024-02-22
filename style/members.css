@@ -58,3 +58,17 @@ body {
 
   background-color:paleturquoise;
 }
+
+#btnUpdate{
+  border: 1px solid;
+  border-radius: 3px;
+
+  height: 25px;
+  margin-left: 0;
+
+  font-family: "Courier New", Courier, monospace;
+  font-size: medium;
+  font-weight: lighter;
+
+  background-color: palegreen;
+}

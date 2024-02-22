@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <script src="../script/login.js"></script>
+    <link rel="styleSheet" href="../style/login.css" />
+  </head>
+  <body>
+    <div id="form">
+      <form
+        method="post"
+        action="../php/addMember.php"
+        style="text-align: right"
+      >
+        <br />
+        <label for="usn">USN : </label>
+        <input class="read" type="text" id="usn" name="usn" /><br /><br />
+        <label for="name">Name : </label>
+        <input class="read" type="text" id="name" name="name" /><br /><br />
+        <label for="branch">Branch : </label>
+        <select name="branch" id="branch" class="read">
+          <option value="AI">Artificial Intelligence</option>
+          <option value="CD">Data Science</option>
+          <option value="CS">Computer Science</option>
+          <option value="EC">Electronics & Communication</option>
+          <option value="ME">Mechanical</option>
+          <option value="CV">Civil</option></select
+        ><br /><br />
+        <label for="pn">Phone Number : </label>
+        <input class="read" type="number" id="pn" name="pn" /><br /><br />
+        <label for="emailID">Email ID : </label>
+        <input
+          class="read"
+          type="text"
+          id="emailID"
+          name="emailID"
+        /><br /><br />
+        <label for="add">Address : </label>
+        <input class="read" type="text" id="add" name="address" /><br />
+        <br />
+        <input
+          id="reset"
+          type="reset"
+          value="Cancel"
+          onclick="window.open(
+            'members.html',
+            '_self'
+          );"
+        />
+        <input id="submit" type="submit" value="Submit" /><br />
+      </form>
+    </div>
+  </body>
+</html>

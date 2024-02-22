@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <script src="../script/login.js"></script>
+    <link rel="styleSheet" href="../style/login.css" />
+  </head>
+  <body>
+    <div id="form">
+      <form
+        method="post"
+        action="../php/addProject.php"
+        style="text-align: right"
+      >
+        <br />
+        <label for="pID">Project ID : </label>
+        <input class="read" type="text" id="pID" name="pID" /><br /><br />
+        <label for="pName">Project Name : </label>
+        <input class="read" type="text" id="pName" name="pName" /><br /><br />
+        <label for="pD">Project Description : </label>
+        <input class="read" type="text" id="pD" name="pD" /><br /><br />
+        <label for="lUSN">USN of Lead : </label>
+        <input class="read" type="text" id="lUSN" name="leadUSN" /><br />
+        <br />
+        <input
+          id="reset"
+          type="reset"
+          value="Cancel"
+          onclick="window.open(
+            'projects.html',
+            '_self'
+          );"
+        />
+        <input id="submit" type="submit" value="Submit" /><br />
+      </form>
+    </div>
+  </body>
+</html>

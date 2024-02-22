@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <script src="../script/login.js"></script>
+    <link rel="styleSheet" href="../style/login.css" />
+  </head>
+  <body>
+    <div id="form">
+      <form method="post" action="../php/addFigure.php" style="text-align: right;">
+        <br />
+        <label for="usr">Username : </label>
+        <input class="read" type="text" id="usr" name="username" /><br /><br />
+        <label for="role">Role : </label>
+        <input class="read" type="text" id="role" name="role" /><br />
+        <br />
+        <input
+          id="reset"
+          type="reset"
+          value="Cancel"
+          onclick="window.open(
+            'figures.html',
+            '_self'
+          );"
+        />
+        <input id="submit" type="submit" value="Submit" /><br />
+      </form>
+    </div>
+  </body>
+</html>

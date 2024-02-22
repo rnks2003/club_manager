@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title></title>
+    <script src="../script/update.js"></script>
+    <link rel="styleSheet" href="../style/login.css" />
+  </head>
+  <body>
+    <label id="prompt">Project to be deleted : </label><br /><br />
+    <div id="form">
+      <br />
+      <form
+        method="post"
+        action="../php/deleteProject.php"
+        style="text-align: right"
+      >
+        <label for="pIdDelete">Project ID : </label>
+        <input
+          class="read"
+          type="text"
+          id="pIdDelete"
+          name="pIdDelete"
+        /><br /><br />
+        <label for="pNameDelete">Project Name : </label>
+        <input
+          class="read"
+          type="text"
+          id="pNameDelete"
+          name="pNameDelete"
+        /><br /><br />
+        <input
+          id="reset"
+          type="reset"
+          value="Cancel"
+          onclick="window.open(
+            'projects.html',
+            '_self'
+          );"
+        />
+        <input id="submit" type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>

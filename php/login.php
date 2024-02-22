@@ -6,6 +6,7 @@
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $username = $_POST["username"];
       $password = $_POST["password"];
+      $username = strtoupper($username);
   
       $sql = "SELECT username, password FROM login WHERE username = ? ";
       

@@ -10,6 +10,9 @@
     <div id="btnHolder">
       <span id="errMsg"> </span>
       <button id="btnBack" onclick="moveBack()">Back</button>
+      <form method="POST" action="../php/updateMembers.php">
+        <button type="submit" id="btnUpdate">Update</button>
+      </form>
     </div>
     <iframe id="aContainer" src="../php/showMembers.php" style="height: 80%">
     </iframe>

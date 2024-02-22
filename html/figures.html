@@ -3,6 +3,7 @@
     <link rel="styleSheet" href="../style/figures.css" />
     <script src="../script/moveBack.js"></script>
   </head>
+
   <body>
     <div style="background-color: palegoldenrod">
       <h1>Figures</h1>
@@ -10,6 +11,9 @@
     <div id="btnHolder">
       <span id="errMsg"> </span>
       <button id="btnBack" onclick="moveBack()">Back</button>
+      <form method="POST" action="../php/updateFigures.php">
+        <button type="submit" id="btnUpdate">Update</button>
+      </form>
     </div>
     <iframe id="aContainer" src="../php/showFigures.php" style="height: 80%">
     </iframe>

@@ -6,30 +6,18 @@ require 'config.php';
 $pID = $_POST['pIdDelete'];
 $pName = $_POST['pNameDelete'];
 
-var_dump($pID);
-var_dump($pName);
-exit;
-
-$username = $_SESSION['username'];
-
-$sql = "select leadUSN from projects where pID=? and pName = ?";
-
-
-if($member!=$username){
-    $sql = "DELETE FROM members WHERE usn=?";
-      
-    if ($stmt = $conn->prepare($sql)) {
+$sql = "DELETE FROM projects WHERE pID=? and pName=?";
     
-        $stmt->bind_param("s",$member);
+if ($stmt = $conn->prepare($sql)) {
 
-        try{
-            if ($stmt->execute()) {
-            }
-        }catch(Exception $e){
-            var_dump($e);
-            exit;
+    $stmt->bind_param("ss",$pID, $pName);
+
+    try{
+        if ($stmt->execute()) {
         }
+    }catch(Exception $e){
     }
 }
-header('location:../html/members.html');
+
+header('location:../html/projects.html');
 ?>

@@ -3,7 +3,7 @@
     require_once "config.php";
     $username = $_SESSION['username'];
 
-    $sql = "select leadUSN from projects where leadUSN=?";
+    $sql = "select usn from figures where usn=?";
 
     if ($stmt = $conn->prepare($sql)) {
         $stmt->bind_param("s", $param_username);

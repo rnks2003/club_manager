@@ -15,8 +15,9 @@
                 header('location:../html/updateProjects.html');
             }
             else{
+                header('location:../html/projects.html');
             }
         }
     }
-    header('location:../html/projects.html');
+   
 ?>

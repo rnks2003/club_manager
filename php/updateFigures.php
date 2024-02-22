@@ -15,8 +15,9 @@
                 header('location:../html/updateFigures.html');
             }
             else{
+                header('location:../html/figures.html');
             }
         }
     }
-    header('location:../html/figures.html');
+    
 ?>

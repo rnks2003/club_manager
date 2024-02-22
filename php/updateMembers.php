@@ -12,12 +12,13 @@
         if ($stmt->execute()) {
             $stmt->store_result();
             if ($stmt->num_rows == 1) {
+                
                 header('location:../html/updateMembers.html');
             }
             else{
-              
+                header('location:../html/members.html');
             }
         }
     }
-    header('location:../html/members.html');
+    //
 ?>

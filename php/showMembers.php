@@ -16,7 +16,10 @@ if ($stmt = $conn->prepare($sql)) {
             echo '<link rel="stylesheet" href="../style/figures.css">';
             echo "<div display:flex;><br><br>";
             while ($stmt->fetch()) {
-                echo "<button id='btnMemberView'><h>$name</h><br>$usn</button><br><br>";
+                echo "<form action='viewMember.php' method='post'>
+                    <input type='hidden' name='usn' value='$usn'>
+                    <input type='hidden' name='src' value='m'>
+                    <button type='submit' id='btnMemberView'><h>$name</h><br>$usn</button></form>";
             }
             echo "</div>";
         }

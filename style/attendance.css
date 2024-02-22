@@ -56,7 +56,16 @@ body {
     text-align: center;
   }
 
-  .aRow{
+  #btnAttendanceView{
+    border: 1px solid;
+    border-radius: 3px;
+
+    height: 50px;
     width: 100%;
-    text-align: center;
-  }
+
+    font-family: "Courier New", Courier, monospace;
+    font-size: medium;
+    font-weight: lighter;
+
+    background-color:paleturquoise;
+}

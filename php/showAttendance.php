@@ -1,6 +1,6 @@
 <?php
 if(!isset($_SESSION)){session_start();}
-require 'config2.php'; 
+require 'config.php'; 
 $username=$_SESSION['username'];
 
 $sql = "select aDate,aTime from attendance where usn=?";

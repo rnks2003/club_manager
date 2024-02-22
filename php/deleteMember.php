@@ -1,7 +1,7 @@
 <?php
 if(!isset($_SESSION)){session_start();}
 
-require 'config2.php';
+require 'config.php';
 
 $member = $_POST["usn"];
 $member = strtoupper($member);

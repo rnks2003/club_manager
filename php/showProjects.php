@@ -1,6 +1,6 @@
 <?php
 if(!isset($_SESSION)){session_start();}
-require 'config2.php'; 
+require 'config.php'; 
 $username=$_SESSION['username'];
 
 $sql = "select p.pID, p.pName, m.name from projects p, members m where m.usn=p.leadUSN";

@@ -1,6 +1,6 @@
 <?php
 if(!isset($_SESSION)){session_start();}
-require 'config2.php'; 
+require 'config.php'; 
 $username=$_SESSION['username'];
 
 $sql = "select m.usn, m.name, f.role from members m,figures f where m.usn=f.usn";

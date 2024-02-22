@@ -2,7 +2,7 @@
 // Database credentials
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "rnks2003";
 $database = "club";
 
 // Create connection

@@ -1,7 +1,7 @@
 <?php
 if(!isset($_SESSION)){session_start();}
 
-require 'config2.php';
+require 'config.php';
 $figure = $_POST["usn"];
 $figure = strtoupper($figure);
 

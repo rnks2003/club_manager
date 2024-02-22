@@ -2,7 +2,7 @@
 if(!isset($_SESSION)){session_start();}
 date_default_timezone_set('Asia/Calcutta');
 
-require 'config2.php';
+require 'config.php';
 $username=$_SESSION['username'];
 
 $sql = "DELETE FROM `attendance` WHERE usn=? and DATEDIFF(NOW(),aDate)>30";

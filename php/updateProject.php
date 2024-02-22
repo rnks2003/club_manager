@@ -1,6 +1,6 @@
 <?php
     if(!isset($_SESSION)){session_start();}
-    require_once "config2.php";
+    require_once "config.php";
     $username = $_SESSION['username'];
 
     $sql = "select leadUSN from projects where leadUSN=?";

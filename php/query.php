@@ -1,5 +1,5 @@
 <?php
-require_once "config2.php"; // Include the configuration file
+require_once "config.php"; // Include the configuration file
 
 // SQL query
 $sql = "SELECT * FROM your_table";

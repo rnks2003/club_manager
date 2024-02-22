@@ -34,7 +34,7 @@
         type="submit"
         value="Submit"
         onclick="isValid()"
-      /><br /><br />
+      /><br />
 </form>
     </div>
   </body>

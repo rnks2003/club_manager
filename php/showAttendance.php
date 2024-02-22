@@ -17,7 +17,7 @@ if ($stmt = $conn->prepare($sql)) {
             echo '<link rel="stylesheet" href="../style/attendance.css">';
             echo '<div id="aBody">';
             while ($stmt->fetch()) {
-                echo "<button id='btnAttendanceView'><h>$date</h><br>$time</button></form>";
+                echo "<button id='btnAttendanceView'><h>$date</h><br>$time</button><br><br>";
             }
             echo '<div>';
         }

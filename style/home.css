@@ -1,0 +1,24 @@
+body {
+    text-align: center;
+    padding-top: 20%;
+
+    font-family: "Courier New", Courier, monospace;
+    font-size: medium;
+  }
+  #prompt {
+    font-family: "Courier New", Courier, monospace;
+    font-size: xx-large;
+    font-weight: lighter;
+  }
+  button {
+    border: 1px solid;
+    border-radius: 3px;
+
+    height: 50px;
+
+    font-family: "Courier New", Courier, monospace;
+    font-size: medium;
+    font-weight: lighter;
+
+    background-color: paleturquoise;
+  }

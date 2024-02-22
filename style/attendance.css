@@ -1,0 +1,62 @@
+body {
+    font-size: medium;
+    font-family: "Courier New", Courier, monospace;
+  }
+  h {
+    font-size: larger;
+    font-weight: bold;
+  }
+
+  #btnMarkAttendance {
+    border: 1px solid;
+    border-radius: 3px;
+
+    height: 25px;
+    margin-left: 0;
+
+    font-family: "Courier New", Courier, monospace;
+    font-size: medium;
+    font-weight: lighter;
+
+    background-color: paleturquoise;
+  }
+
+  #btnBack {
+    border: 1px solid;
+    border-radius: 3px;
+
+    height: 25px;
+
+    font-family: "Courier New", Courier, monospace;
+    font-size: medium;
+    font-weight: lighter;
+
+    background-color: paleturquoise;
+  }
+
+  #headerText{
+    background-color: palegoldenrod;
+    text-align: center;
+  }
+
+  #btnHolder{
+    text-align: center;
+    display: flex;
+  }
+
+  #aContainer{
+      width: 100%;
+      height: max-content;
+      text-align: center;
+      border: none;
+  }
+
+  #aBody{
+    width: 100%;
+    text-align: center;
+  }
+
+  .aRow{
+    width: 100%;
+    text-align: center;
+  }

@@ -1,0 +1,28 @@
+body {
+    font-size: medium;
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+  }
+
+  h {
+    font-size: larger;
+    font-weight: lighter;
+  }
+
+  #btnBack {
+    border: 1px solid;
+    border-radius: 3px;
+
+    height: 25px;
+
+    font-family: "Courier New", Courier, monospace;
+    font-size: medium;
+    font-weight: lighter;
+
+    background-color: paleturquoise;
+  }
+
+  #btnHolder{
+    text-align: center;
+    display: flex;
+  }

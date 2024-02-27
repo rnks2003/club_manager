@@ -32,6 +32,8 @@ if ($stmt = $conn->prepare($sql)) {
                         }
                     }
                 }
+            }else{
+                header('location : ../php/showProjects.php');
             }
         }
     }catch(Exception $e){

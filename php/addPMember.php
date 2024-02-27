@@ -5,6 +5,8 @@ require 'config.php';
 $username = $_SESSION['username'];
 $mUSN = $_POST['mUSN'];
 
+$mUSN = strtoupper($mUSN);
+
 $sql = "select pID,pName,leadUSN from projects where leadUSN=?";
       
 if ($stmt = $conn->prepare($sql)) {

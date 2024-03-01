@@ -44,3 +44,5 @@ function post(page) {
         break;
     }
   }
+
+  document.getElementById("new").style.display = ''

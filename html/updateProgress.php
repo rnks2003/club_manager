@@ -11,7 +11,7 @@
     <label id="prompt">Progress Report : </label><br /><br />
     <div id="form">
       <br />
-      <form method="post" action="../php/updateProgress.php">
+      <form method="post" action="../php/updateProgress.php" style="width:100%;">
         <?php
         echo "<input type='hidden' name='pID' value='$pID'><input type='hidden' name='pName' value='$pName'>";
         ?>
